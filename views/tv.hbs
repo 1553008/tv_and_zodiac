@@ -1,0 +1,54 @@
+<div id="tvBody" class="d-flex justify-content-between">
+    <div id="tvCategories">
+        <ul class="list-group">
+            <a class="list-group-item list-group-item-action active all" href="/tv">All</a>
+            {{#each tvCategories}}
+            <a class="list-group-item list-group-item-action" href="{{link}}">{{name}}</a>
+            {{/each}}
+        </ul>
+    </div>
+    <div id="tvResults" class="d-flex flex-row flex-wrap justify-content-between">
+        {{#each tvCategories}}
+            {{#each data}}
+        <div class='card' style='width: 18rem'>
+            <img class='card-img-top' src='{{imgLink}}' alt='Samsang'>
+            <div class='card-body'>
+                <h5 class='card-title'> {{name}} </h5>
+                <p class='card-text'> {{description}} </p>
+                <p class='card-text'> {{price}} </p>
+            </div>
+        </div>
+        {{/each}}
+        {{/each}}
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#tvCategories a').click(function (e) {
+            //Mark category as active
+            $('#tvCategories a').removeClass('active');
+            $(this).addClass('active')
+            if (!$(this).hasClass('all'))
+                e.preventDefault();
+            else
+                return;
+            //Request Data from API according to categories
+            $.get($(this).attr('href'), (res) => {
+                $('#tvResults').html('');
+                $.each(res.data, (i, item) => {
+                    console.log(res.data[i]);
+                    $('#tvResults').append(
+                        "<div class='card' style='width: 18rem'>" +
+                        "<img class='card-img-top' src ='" + res.data[i].imgLink + "' alt = 'Samsang'>" +
+                        "<div class='card-body'>" +
+                        "<h5 class='card-title'>" + res.data[i].name + "</h5>" +
+                        "<p class='card-text'>" + res.data[i].description + "</p>" +
+                        "<p class='card-text'>" + res.data[i].price + "</p>" +
+                        "</div>" +
+                        "</div>"
+                    )
+                });
+            });
+        })
+    });
+</script>

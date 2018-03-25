@@ -1,8 +1,37 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px "Raleway", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: black;
+}
+.card-title{
+  font-weight:  bolder;
+}
+.card{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-width: 1px;
+  border-color: rgb(202, 195, 195);
+}
+#tvBody{
+  margin-top: 10px;
+}
+#tvCategories{
+  margin-left: 10px;
+  margin-right: 10px
+}
+.navbar-brand{
+  font-size: 2em;
+}
+.nav-item{
+  font-size: 1.1em;
+  transition: all 0.3s;
+}
+.nav-item:hover{
+  font-size: 1.5em;
+}
+#tvResults{
+  margin-left: auto;
+  margin-right: auto;
 }
