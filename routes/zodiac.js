@@ -43,7 +43,7 @@ let zodiacInfo = {
       "http://taurus.bateleur.eu/?_ga=2.28724028.168267949.1522054490-1373140246.1522054489"
   },
   gemini: {
-    imgLink: "/images/zodiac/aquarius.jpg",
+    imgLink: "/images/zodiac/gemini.jpg",
     date: "May 21 - June 20",
     summary:
       "Instability and variability is the essential characteristic of Gemini, because their element is air and they are under the influence of the planet Mercury (Mercury is also a flying god). In the most typical cases you can perceive a certain nervous energy that surrounds Gemini. The brightest example is Johnny Depp ...",
@@ -83,7 +83,7 @@ let zodiacInfo = {
       "http://libra.bateleur.eu/?_ga=2.60828716.168267949.1522054490-1373140246.1522054489"
   },
   scorpio: {
-    imgLink: "/images/zodiac/scorpio.jpg",
+    imgLink: "/images/zodiac/scorpius.jpg",
     date: "October 23 - November 21",
     summary:
       "Getting on with Scorpios is not easy. Insults bounce off them and they do not melt down by compliments like snow in spring. Scorpios do not need anybody to tell them how good they are. Scorpios often have the evil eye. If your eyes meet, you probably move away first. Scorpios are very emotional and they take ...",
@@ -99,7 +99,7 @@ let zodiacInfo = {
       "http://sagittarius.bateleur.eu/?_ga=2.60572845.168267949.1522054490-1373140246.1522054489"
   },
   capricorn: {
-    imgLink: "/images/zodiac/capricorn.jpg",
+    imgLink: "/images/zodiac/capricornus.jpg",
     date: "December 22 - January 19",
     summary:
       "Capricorn is a mountain antelope, who can climb the social ladder as skilfully as his four-legged friend in the mountains. Capricorns watch their steps carefully, because every wrong move could end up with a very painful fall. Capricorns know that the base of success is self-discipline. Capricorns respect ...",
